@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { ReactElement } from 'react';
+import './App.scss';
+import SearchComponent from './components/search/SearchComponent';
 
-function App() {
+import ContactsComponent from './components/contacts/ContactsComponent';
+
+const App = (): ReactElement => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main-page">
+      <section className="contacts-section">
+        {/* <div className="contacts-section__profile">
+          
+        </div> */}
+        <div className="contacts-section__search">
+          <SearchComponent />
+        </div>
+        <div className="contacts-section__contacts">
+          <ContactsComponent />
+        </div>
+      </section>
+      <section className="chat-section"></section>
+    </main>
   );
-}
+};
 
 export default App;

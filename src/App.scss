@@ -1,0 +1,190 @@
+@use 'styles/variables' as * ;
+@use 'src/styles/mixins' as *;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+
+
+
+.main-page{
+  background-color: $primary-color;
+  height: calc(100vh - 6em);
+  padding: 1em 4px;
+  border-radius: 5px;
+
+  .contacts-section{
+   display: flex;
+   flex-direction: column;
+   height: calc(100vh - 6em);
+    &__search{
+  
+      margin: 0 auto;
+    }
+    &__contacts{
+      margin: 0 auto;
+      overflow-y: scroll;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+ 
+    }
+    
+  }
+
+  .chat-section{
+   
+    visibility: hidden;
+  }
+
+}
+
+@include device(tablet){
+    .main-page{
+        display: grid;
+        grid-template-columns: minmax(34vw, 45%)  55%;
+        gap: 1em;
+        padding: 1.5em;
+    
+      .contacts-section{
+        border-radius: 20px;
+        max-height: calc(100vh - 6em);
+
+        &__contacts,  &__search{
+         
+          width: 90%
+         
+        }
+
+        &__search{
+          margin-top: 1em;
+        }
+        &__contacts{
+          background-color: $plain-white;
+          border-radius: 10px;
+          overflow-y: scroll;
+          &::-webkit-scrollbar{
+            display: none;
+          }
+        }
+       
+      
+      }
+    
+      .chat-section{
+       max-height: calc(100vh - 8em);
+       visibility: visible;
+       margin-top: 4.6em;
+        border-radius: 20px;
+        background-color:  $plain-white;
+      }
+
+    }
+  
+}
+
+@include device(laptop){
+  .main-page{
+    display: grid;
+    grid-template-columns:  35%  65%;
+    //gap: 1em;
+    padding: 1.5em;
+
+ 
+
+  .contacts-section{
+    border-radius: 20px;
+    max-height: calc(100vh - 6em);
+
+  
+    &__contacts,  &__search{
+      width: 90%
+     
+    }
+
+    &__search{
+      margin-top: 1em;
+    }
+    &__contacts{
+      background-color: $plain-white;
+      border-radius: 10px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
+   
+  
+  }
+
+  .chat-section{
+    visibility: visible;
+    max-height: calc(100vh - 8em);
+    margin-top: 4.6em;
+    border-radius: 20px;
+    background-color:  $plain-white;
+   
+  }
+
+}
+
+}
+
+@include device(desktop){
+  .main-page{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    // gap: 1em;
+    padding: 1.5em;
+
+
+ 
+
+  .contacts-section{
+    border-radius: 20px;
+    max-height: calc(100vh - 6em);
+    align-items: start;
+   
+   
+  
+    &__contacts,  &__search{
+     
+      width: 90%
+     
+    }
+
+    &__search{
+      margin-top: 1em;
+    }
+    &__contacts{
+      background-color: $plain-white;
+      border-radius: 10px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
+   
+  
+  }
+
+  .chat-section{
+    visibility: visible;
+    max-height: calc(100vh - 10em);
+    margin-top: 4.6em;
+    border-radius: 20px;
+    background-color:  $plain-white;
+   
+  }
+
+}
+
+}
+
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

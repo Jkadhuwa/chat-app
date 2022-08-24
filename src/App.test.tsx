@@ -1,9 +1,13 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+afterEach(cleanup);
+
+describe('App Component Tests', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  it('Should have a search input rendered ', () => {
+    const searchInput = screen.getByRole('textbox');
+    expect(searchInput).toBeInTheDocument();
+  });
 });

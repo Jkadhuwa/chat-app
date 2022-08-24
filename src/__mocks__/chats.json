@@ -1,0 +1,24 @@
+[
+    {
+        "userId": "001",
+        "messages": [
+            {
+                
+            }
+        ]
+        
+    },
+    {
+        "userId": "002",
+        "time": "09.00",
+        "messages": "Nice working with you",
+        "read": false
+    },
+    {
+        "userId": "003",
+        "time": "09.00",
+        "messages": "Nice working with you",
+        "read": true
+    }
+
+]

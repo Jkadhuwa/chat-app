@@ -1,0 +1,99 @@
+[
+    {
+        "userId": "001",
+        "firstName": "Musinda",
+        "lastName": "Kadhuwa",
+        "profilePic": "https://picsum.photos/id/15/40/40"
+
+    },
+    {
+        "userId": "002",
+        "firstName": "John",
+        "lastName": "Doe",
+        "profilePic": "https://picsum.photos/id/14/40/40"
+
+    },
+    {
+        "userId": "003",
+        "firstName": "Happy",
+        "lastName": "Sorry",
+        "profilePic": "https://picsum.photos/id/16/40/40"
+
+
+    },
+    {
+        "userId": "004",
+        "firstName": "Stivo",
+        "lastName": "SimpleBoy",
+        "profilePic": "https://picsum.photos/id/20/40/40"
+
+
+    },
+    {
+        "userId": "005",
+        "firstName": "Cherry",
+        "lastName": "Potter",
+        "profilePic": "https://picsum.photos/id/14/40/40"
+
+
+    }
+    ,
+    {
+        "userId": "006",
+        "firstName": "Harry",
+        "lastName": "Hotter",
+        "profilePic": "https://picsum.photos/id/10/40/40"
+
+
+    },
+    {
+        "userId": "007",
+        "firstName": "Polar",
+        "lastName": "Icelander",
+        "profilePic": "https://picsum.photos/id/11/40/40"
+
+
+    },
+    {
+        "userId": "008",
+        "firstName": "Khali",
+        "lastName": "Kartel",
+        "profilePic": "https://picsum.photos/id/9/40/40"
+
+
+    }
+    ,
+    {
+        "userId": "009",
+        "firstName": "Siro",
+        "lastName": "Care",
+        "profilePic": "https://picsum.photos/id/1/40/40"
+
+
+    }
+    ,
+    {
+        "userId": "010",
+        "firstName": "Shida",
+        "lastName": "Mingi",
+        "profilePic": "https://picsum.photos/id/22/40/40"
+
+
+    },
+    {
+        "userId": "011",
+        "firstName": "Wengi",
+        "lastName": "Wape",
+        "profilePic": "https://picsum.photos/id/24/40/40"
+
+
+    },
+    {
+        "userId": "012",
+        "firstName": "Kwetu",
+        "lastName": "Joto",
+        "profilePic": "https://picsum.photos/id/28/40/40"
+
+
+    }
+]

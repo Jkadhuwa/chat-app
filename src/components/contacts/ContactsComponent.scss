@@ -1,0 +1,221 @@
+@use 'src/styles/variables' as *;
+@use 'src/styles/mixins' as *;
+
+.main{
+    display: flex;
+    background-color: #fff;
+    width: 75vw;
+    border-radius: 10px;
+    padding: 0.8em;
+    margin-bottom: 0.5rem;
+    
+    .user-side{
+        display: flex;
+        flex-basis: 20%;
+        flex-direction: row;
+        .profile-pic-container{
+            width: 2.5em;
+            height: 2.5em;
+            .profile-pic{
+                position: relative;
+                height: 2.5em;
+                width: 2.5em;
+                border-radius: 50%;
+            }
+            .status-box{
+                display: flex;
+                height: 0.9rem;
+                width: 0.9rem;
+                margin: -1rem 2em 0.5em 1.8rem ;
+                border-radius: 50%;
+                background-color: #fff;
+                position: sticky;
+                justify-content: center;
+                align-items: center;
+   
+            }
+    
+            .status{
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color: $online-color;
+                border-radius: 50%;
+                margin-top: -1px;
+                
+                
+            }
+        }
+
+    }
+   
+    .message-side{
+        display: flex;
+        flex-basis: 80%;
+        .contacts-details{
+            display: flex;
+            flex-basis: 70%;
+            flex-direction: column;
+            justify-content: center;
+           
+      
+            .username{
+                color: $font-select-1;
+                font-size:  14px;
+                font-weight: 500;
+    
+            }
+
+            .last-message{
+                display: flex;
+                color: $font-select-2;
+                .delivery-status{
+                    margin-right: 0.1em;
+
+                }
+
+                .message{
+                    font-size: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space:nowrap;
+                    max-width: 9rem;
+                }
+               
+            }
+        }
+   
+   
+    .message-details{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+
+        .last-message-time{
+            display: flex;
+            align-self: flex-end;
+            color: $font-select-2;
+            font-size: 13px;
+
+        }
+        .unread-count-wrapper{
+            display: flex;
+            height: 1.5em;
+            width: 1.5em;
+            border-radius: 50%;
+            background: $font-select-3;
+            color: #fff;
+            justify-content: center;
+            align-self: flex-end;
+            align-items: center;
+            margin-top: 0.4rem;
+         
+          .count{
+            font-size: 13px;
+          } 
+        }
+    }
+}
+
+}
+
+@include device(tablet){
+    .main{
+      width: calc(100% - 1em);
+      align-items: center;
+      padding: 0.5em;
+      justify-items: center;
+
+      &:hover{
+        border: 1px #F4F4F4 solid;
+
+      }
+    
+    }
+    .message-side{
+       
+        .contacts-details{
+           
+            flex-wrap: wrap;
+          }
+
+          .last-message{
+
+            .message{
+                display: flex;
+                flex-wrap: wrap;
+               
+            }
+        
+    
+        }
+    }
+  
+}
+
+@include device(laptop){
+    .main{
+      width: calc(100% - 1em);
+      align-items: center;
+      padding: 0.5em;
+      justify-items: center;
+
+      &:hover{
+        border: 1px #F4F4F4 solid;
+
+      }
+    
+    }
+    .message-side{
+        border-bottom: 1px #F4F4F4 solid;
+        .contacts-details{
+           
+            flex-wrap: wrap;
+          }
+
+          .last-message{
+
+            .message{
+                display: flex;
+                flex-wrap: wrap;
+               
+            }
+        
+    
+        }
+    }
+  
+}
+
+@include device(desktop){
+    .main{
+      width: calc(100% - 1em);
+      align-items: center;
+      padding: 0.5em;
+      justify-items: center;
+
+      &:hover{
+        border: 1px #F4F4F4 solid;
+
+      }
+    
+    }
+    .message-side{
+        border-bottom: 1px #F4F4F4 solid;
+        .contacts-details{
+           
+            flex-wrap: wrap;
+          }
+
+          .last-message{
+
+            .message{
+                display: flex;
+                flex-wrap: wrap;
+               
+            }
+        
+    
+        }
+    }
+  
+}

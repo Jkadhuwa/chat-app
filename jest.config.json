@@ -1,0 +1,13 @@
+{
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "src/**/*.tsx"
+    ],
+    "coveragePathIgnorePatterns": [
+        "node_modules",
+        "test-config",
+        "interfaces",
+        "src/reportWebVitals.ts",
+        "src/__mocks__/*"
+    ]
+}

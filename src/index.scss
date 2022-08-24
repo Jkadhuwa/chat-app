@@ -1,0 +1,52 @@
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-select;
+  background-image: radial-gradient($background-select2 30%, transparent 30%), radial-gradient($background-select2 60%, transparent 60%), radial-gradient($background-select2 15%, transparent 15%);
+  background-size:80px 80px ;
+  background-position: 0 0, 30px 30px rotate(45deg) ;
+  padding: 1em;
+  overflow: hidden;
+  
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@include device(tablet){
+  body{
+    padding: 1.5em 4em;
+  }
+
+}
+
+@include device(laptop){
+  body{
+    padding: 1.5em 4em;
+  }
+}
+
+@include device(desktop){
+  
+  body{
+    padding: 1.5em 4em;
+  }
+}
+
+// #circular1 {
+//   background-color: $background-select;
+//   background-image: radial-gradient($background-select2 15%, transparent 15%),
+//   radial-gradient($background-select2 40%, transparent 40%);
+//   background-size:60px 60px;
+//   background-position: 0 0, 30px 30px;
+//   }
